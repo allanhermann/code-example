@@ -1,9 +1,3 @@
-import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
-import { UserContext } from "../../context/userContext";
-import { EmptyState } from "./partials/empty";
-import { Header } from "./partials/header";
-
 describe("Header Component", () => {
   it("Test that the link has the correct redirect page", () => {
     const link = render(<Header />).container.querySelector("#goBack");

@@ -1,8 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import { EmptyContainer, EmptyImageContainer, EmptyText } from "./style";
-import Bee from "../../../assets/Images/bee.png";
-
 export const EmptyState = () => {
   return (
     <EmptyContainer id="empty">

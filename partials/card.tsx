@@ -1,20 +1,3 @@
-import {
-  AddMore,
-  CardBody,
-  CardText,
-  CardTitle,
-  Tag,
-  TagRow,
-  TrashCan,
-} from "./style";
-import Image from "next/image";
-import Trash from "../../../assets/svg/trash.svg";
-import Chart from "../../../assets/svg/chart.svg";
-import Phone from "../../../assets/svg/phone.svg";
-import Location from "../../../assets/svg/location.svg";
-import PlusSymbol from "../../../assets/svg/plus-symbol.svg";
-import { useState } from "react";
-
 type CardProps = {
   id: number;
   title?: string;
@@ -39,7 +22,6 @@ export const Card = ({
   const [textAddMore, setTextAddMore] = useState<string>("");
   const [clickAddMore, setClickAddMore] = useState<boolean>(false);
   const [discardedComponent, setDiscardedComponent] = useState<boolean>(false);
-
   const noLocationString = ",  - ";
 
   const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
